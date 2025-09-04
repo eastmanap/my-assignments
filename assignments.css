@@ -1,0 +1,130 @@
+/* Generic Student */
+/* 08 MAR 20XX */
+/* Assignments Page CSS */
+
+* {
+    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+    font-size: 16px;
+    font-family: "Saira", serif;
+    width: 100%;
+
+    --black: #000;
+    --white: #fff;
+    --red: #ff0000;
+    --green: #00ff00;
+    --blue: #0000ff;
+
+    /* Colors in color scheme */
+    --charcoal: #5C6067;
+    --lightgrey: #A4A5A7;
+    --mediumgrey: #6D7A8B;
+    --bluegrey:  #738BA9;
+    --lightsand: #C0BFC0;
+    --verylightgrey: #CBCCCD;
+    --southwestorange: rgb(221, 111, 47);
+    --chili: rgb(146, 33, 33);
+    --lighterorange: rgb(255, 166, 0);
+    --robin: rgb(0, 255, 242);
+
+}
+
+body {
+    font-family: "Saira", serif;
+    font-size: 1.2rem;
+}
+
+section {
+    width: 60%;
+    opacity: 0.8;
+    margin-top: 0.90rem;
+    margin-bottom: 0.90rem;
+    padding: 1rem;
+}
+
+footer { 
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    margin-left: 0.75rem;
+    font-style: italic;
+}
+
+.unit-work, .unit-exams {
+    background-color: var(--lightsand);
+}
+
+ul li {
+    margin: 0.50rem 2rem;
+}
+
+a:link{
+    color: var(--southwestorange);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--chili);
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: var(--lighterorange);
+    color: var(--lightgrey);
+    text-decoration: none;
+}
+
+a:active {
+    color: var(--mediumgrey);
+    background-color: var(--robin);
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2rem;
+    color: rgb(146, 53, 20);
+    text-shadow: 1px 1px;
+}
+
+h2 {
+    color: rgb(146, 53, 20);
+    font-size: 1.6rem;
+    text-shadow: 1px 1px;
+    width: 90%;
+    background-color: var(--bluegrey);
+    padding: 0.75rem;
+
+    animation-name: southwest2;
+    animation-duration: 3s;
+}
+
+h3 {
+    color: rgb(146, 53, 20);
+    font-size: 1.2rem;
+    text-shadow: 1px 1px;
+    width: 90%;
+    background-color: rgb(156, 156, 114);
+    padding: 0.60rem;
+
+    animation-name: southwest1;
+    animation-duration: 5s;
+}
+
+h3 ul li {
+    list-style-type: none;
+}
+
+@keyframes southwest1 {
+    0% {background-color: var(--lightsand);}
+    50% {background-color: var(--bluegrey);}
+    100% {background-color: var(--lightsand);}
+}
+
+@keyframes southwest2 {
+    from {background-color: var(--bluegrey);}
+    to {background-color: var(--lightsand);}
+}
